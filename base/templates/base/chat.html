@@ -1,0 +1,13 @@
+<h1>Chat</h1>
+
+<form method="GET" action="{% url 'chat' %}">
+    <input type='text' name='search-area' placeholder="Search your task" value="{{search_input}}">
+    <input class="button" type="submit" value='Search'>
+</form>
+
+<p id = "ans"></p>
+
+{{answer}}
+
+<hr>
+<a href="{% url 'tasks' %}">Go back</a>
